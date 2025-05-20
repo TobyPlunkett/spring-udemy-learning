@@ -15,4 +15,11 @@ public class DemoRestController {
     public String sayHello(){
         return "hello world " + configTestValue ;
     }
+
+    //expose new endpoint "workout"
+    @GetMapping("/workout")
+    public String getDailyWorkout(){
+        return "run a 5k ";
+    }
+
 }
