@@ -22,4 +22,8 @@ public class DemoRestController {
         return "run a 5k ";
     }
 
+    //expose new endpoint "fortune"
+    @GetMapping("/fortune")
+    public String getDailyFortune(){ return "Today is your lucky day"; }
+
 }
