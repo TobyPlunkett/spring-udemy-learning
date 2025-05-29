@@ -40,7 +40,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+<!--		exposes some endpoints we can monitor 'out-the-box'-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 <!--		restarts application when changes made to code-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
